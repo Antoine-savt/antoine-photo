@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de photographie professionnel - Portrait, paysage et événementiel">
+  <meta name="keywords" content="photographe, portfolio, photographie, portrait, paysage, événementiel">
+  <meta name="author" content="Antoine">
+  <title>Portfolio Photographe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">JD</a>
+      <div class="nav-links">
+        <a href="about.html">À propos</a>
+        <a href="projets.html">Mes projets</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-image-wrapper">
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1920&q=90" alt="Photo principale" class="hero-image">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">Photographe Professionnel</div>
+      <h1 class="hero-title">Capturer l'instant,<br>Révéler l'émotion</h1>
+      <p class="hero-subtitle">Portrait • Paysage • Événementiel</p>
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn-hero">Découvrir mon travail</a>
+        <a href="projets.html" class="btn-hero-secondary">Mes projets</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </header>
+  
+  <main>
+    <section id="portfolio" class="section portfolio-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2 class="section-title">Portfolio</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="photo-card" data-photo='{"title":"Portrait urbain","category":"Portrait","camera":"Canon EOS R5","lens":"Canon RF 85mm f/1.2L","aperture":"f/1.4","iso":"200","shutter":"1/250s","location":"Paris, France","format":"9:16","description":"Un portrait capturé dans les rues de Paris, mettant en valeur l'expression naturelle du sujet grâce à une ouverture large qui crée une profondeur de champ remarquable."}'>
+            <div class="photo-image">
+              <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=90" alt="Portrait 1">
+            </div>
+            <div class="photo-info">
+              <span class="photo-category">Portrait</span>
+              <h3 class="photo-title">Portrait urbain</h3>
+              <div class="photo-meta">
+                <span>Canon EOS R5</span>
+                <span>f/1.4</span>
+                <span>ISO 200</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="photo-card large" data-photo='{"title":"Montagne au coucher du soleil","category":"Paysage","camera":"Sony A7R IV","lens":"Sony FE 16-35mm f/2.8 GM","aperture":"f/8","iso":"100","shutter":"1/60s","location":"Alpes, France","format":"16:9","description":"Paysage montagneux capturé à l'heure dorée, où la lumière naturelle sublime les reliefs et crée une atmosphère apaisante. L'utilisation d'une ouverture fermée permet une netteté sur toute la profondeur de champ."}'>
+            <div class="photo-image">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=90" alt="Paysage">
+            </div>
+            <div class="photo-info">
+              <span class="photo-category">Paysage</span>
+              <h3 class="photo-title">Montagne au coucher du soleil</h3>
+              <p class="photo-description">Paysage montagneux capturé à l'heure dorée, où la lumière naturelle sublime les reliefs et crée une atmosphère apaisante.</p>
+              <div class="photo-meta">
+                <span>Sony A7R IV</span>
+                <span>f/8</span>
+                <span>ISO 100</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="photo-card" data-photo='{"title":"Cérémonie de mariage","category":"Événement","camera":"Nikon D850","lens":"Nikon 24-70mm f/2.8E","aperture":"f/2.8","iso":"800","shutter":"1/125s","location":"Château de Versailles","format":"9:16","description":"Moment d'émotion capturé lors d'une cérémonie de mariage. La photographie d'événementiel nécessite une réactivité et une maîtrise technique pour immortaliser ces instants précieux dans des conditions de lumière variées."}'>
+            <div class="photo-image">
+              <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a0b14?auto=format&fit=crop&w=600&q=90" alt="Événement">
+            </div>
+            <div class="photo-info">
+              <span class="photo-category">Événement</span>
+              <h3 class="photo-title">Cérémonie de mariage</h3>
+              <div class="photo-meta">
+                <span>Nikon D850</span>
+                <span>f/2.8</span>
+                <span>ISO 800</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="photo-card tall" data-photo='{"title":"Portrait en noir et blanc","category":"Noir & Blanc","camera":"Leica M10","lens":"Leica Summilux 50mm f/1.4","aperture":"f/2","iso":"400","shutter":"1/125s","location":"Studio, Paris","format":"9:16","description":"Portrait artistique en noir et blanc réalisé en studio. Le monochrome permet de se concentrer sur les formes, les textures et les expressions, créant une image intemporelle et puissante."}'>
+            <div class="photo-image">
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=90" alt="Noir et blanc">
+            </div>
+            <div class="photo-info">
+              <span class="photo-category">Noir & Blanc</span>
+              <h3 class="photo-title">Portrait en noir et blanc</h3>
+              <div class="photo-meta">
+                <span>Leica M10</span>
+                <span>f/2</span>
+                <span>ISO 400</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="photo-card" data-photo='{"title":"Portrait en studio","category":"Portrait","camera":"Canon EOS 5D Mark IV","lens":"Canon EF 50mm f/1.2L","aperture":"f/1.8","iso":"100","shutter":"1/200s","location":"Studio, Paris","format":"9:16","description":"Portrait professionnel réalisé avec un éclairage studio maîtrisé. L'objectif 50mm offre une perspective naturelle, idéale pour les portraits, tout en permettant un flou d'arrière-plan élégant."}'>
+            <div class="photo-image">
+              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=90" alt="Portrait 2">
+            </div>
+            <div class="photo-info">
+              <span class="photo-category">Portrait</span>
+              <h3 class="photo-title">Portrait en studio</h3>
+              <div class="photo-meta">
+                <span>Canon EOS 5D Mark IV</span>
+                <span>f/1.8</span>
+                <span>ISO 100</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="photo-card" data-photo='{"title":"Forêt automnale","category":"Nature","camera":"Fujifilm X-T4","lens":"Fujifilm XF 23mm f/1.4 R","aperture":"f/5.6","iso":"200","shutter":"1/100s","location":"Forêt de Fontainebleau","format":"9:16","description":"Paysage forestier capturé en automne, où les couleurs chaudes des feuilles contrastent avec la lumière douce filtrant à travers les branches. Une composition qui invite à la contemplation."}'>
+            <div class="photo-image">
+              <img src="https://images.unsplash.com/photo-1468945036866-90818913a5e1?auto=format&fit=crop&w=600&q=90" alt="Nature">
+            </div>
+            <div class="photo-info">
+              <span class="photo-category">Nature</span>
+              <h3 class="photo-title">Forêt automnale</h3>
+              <div class="photo-meta">
+                <span>Fujifilm X-T4</span>
+                <span>f/5.6</span>
+                <span>ISO 200</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 class="section-title">Contact</h2>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Travaillons ensemble</h3>
+            <p>Vous avez un projet en tête ? N'hésitez pas à me contacter pour discuter de vos besoins photographiques.</p>
+            <div class="contact-details">
+              <p><strong>Email</strong><br>contact@jeandupont.fr</p>
+              <p><strong>Téléphone</strong><br>+33 6 12 34 56 78</p>
+            </div>
+          </div>
+          <form class="contact-form" autocomplete="off">
+            <div class="form-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Votre email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Parlez-moi de votre projet..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">
+              <span>Envoyer</span>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2024 Jean Dupont. Tous droits réservés.</p>
+    </div>
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
+
