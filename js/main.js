@@ -220,30 +220,31 @@ document.addEventListener('DOMContentLoaded', function() {
     photoObserver.observe(card);
   });
 
-  // Animation des cartes de projets (page projets.html)
-  const projectItems = document.querySelectorAll('.project-item');
-  if (projectItems.length > 0) {
+  // Animation des projets éditoriaux (page projets.html)
+  const projectFeatures = document.querySelectorAll('.project-feature');
+  if (projectFeatures.length > 0) {
     const projectObserver = new IntersectionObserver(function(entries) {
       entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
           setTimeout(() => {
             entry.target.classList.add('visible');
-          }, index * 80);
+          }, index * 200);
         }
       });
     }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
+      threshold: 0.2,
+      rootMargin: '0px 0px -100px 0px'
     });
 
-    projectItems.forEach(item => {
-      projectObserver.observe(item);
+    projectFeatures.forEach(feature => {
+      projectObserver.observe(feature);
     });
     
     // Ajouter l'interaction de clic pour ouvrir les images en modal
-    projectItems.forEach(item => {
-      item.addEventListener('click', function() {
-        const img = item.querySelector('img');
+    const projectImages = document.querySelectorAll('.project-image-full');
+    projectImages.forEach(imageWrapper => {
+      imageWrapper.addEventListener('click', function() {
+        const img = imageWrapper.querySelector('img');
         if (img) {
           // Créer ou réutiliser le modal existant
           let modal = document.querySelector('.modal');
@@ -282,7 +283,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }
           
           const modalImg = modal.querySelector('.modal-content');
-          modalImg.src = img.src.replace('w=1200', 'w=1920');
+          modalImg.src = img.src.replace('w=1920', 'w=2560');
           modalImg.alt = img.alt;
           modal.classList.add('active');
           document.body.style.overflow = 'hidden';
